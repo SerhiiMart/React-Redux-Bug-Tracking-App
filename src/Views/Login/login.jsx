@@ -24,13 +24,12 @@ export default () => {
   }
 
   return(
-    <div className="loginBG">
-      <form className="login-panel">
+    <div className="login">
+      <form className="loginPanel">
         <h2>Login:</h2>
         <input name="name" placeholder="Name" onChange={inputChanged} value={formInput.name}/>
-        <h2>Password:</h2>
         <input name="password" type="password" placeholder="Password" onChange={inputChanged} value={formInput.password}/>
-        <button type="submit" onClick={submit}>Login</button>
+        <button type="submit" onClick={submit}>Submit</button>
       </form>
     </div>
   );

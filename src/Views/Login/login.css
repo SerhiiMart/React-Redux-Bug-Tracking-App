@@ -1,0 +1,41 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  background: url(../../Images/forest.jpg);
+  background-size: cover;
+  background-color: rgba(88, 114, 40, 0.527);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  text-align: center;
+}
+
+.login > .loginPanel {
+  /* background-color: var(--prime-color); */
+  width: 24.74rem;
+  background-color: rgba(67, 116, 52, 0.527);
+  background-blend-mode: multiply;
+  border: 0.3rem solid rgb(79, 101, 102);
+  border-radius: 3%;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.loginPanel h2 {
+  width: 100%;
+}
+
+.loginPanel input {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  padding-left: 5px;
+}

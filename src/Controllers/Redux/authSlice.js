@@ -19,7 +19,7 @@ const slice = createSlice({
     createUser: (state, action) => {
 
     }
-  },
+  }
 });
 
 export default slice.reducer;
