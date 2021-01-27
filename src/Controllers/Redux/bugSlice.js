@@ -18,3 +18,6 @@ const slice = createSlice({
   }
 
 });
+
+export default slice.reducer;
+export const {getBugs, createBugs, updateBugs, markComplete} = slice.actions;
