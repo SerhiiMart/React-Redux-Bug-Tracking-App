@@ -1,5 +1,6 @@
+export default bug;
 
-export function bug(bug){
+ function bug(bug){
   if (bug != undefined) {
     this._id = bug._id;
     this.version = bug.version;
@@ -12,3 +13,4 @@ export function bug(bug){
     this.time = bug.time;
   }
 }
+

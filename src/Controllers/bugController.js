@@ -1,4 +1,4 @@
-import bugModel from '../Models/bugModel'
+import bugModel from '../Models/bugModel';
 
 export function retrieveBugs () {
   let data = [];
@@ -29,3 +29,4 @@ export function retrieveBugs () {
   })
   return sorted;
 }
+
