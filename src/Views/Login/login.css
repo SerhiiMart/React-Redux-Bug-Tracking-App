@@ -12,7 +12,7 @@
   background-attachment: fixed;
 }
 
-.login > .loginPanel {
+.login .loginPanel {
   /* background-color: var(--prime-color); */
   width: 24.74rem;
   background-color: rgba(67, 116, 52, 0.527);

@@ -1,6 +1,7 @@
 * {
-  overflow: hidden;
-}
+  overflow-x:hidden;
+} 
+
 
 #root {
   grid-template-columns: 20% 80%;
