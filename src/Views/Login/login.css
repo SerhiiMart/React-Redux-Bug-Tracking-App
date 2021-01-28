@@ -5,12 +5,11 @@
   position: absolute;
   background: url(../../Images/forest.jpg);
   background-size: cover;
+  grid-column: 1/2;
   background-color: rgba(88, 114, 40, 0.527);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  align-items: center;
-  text-align: center;
 }
 
 .login > .loginPanel {

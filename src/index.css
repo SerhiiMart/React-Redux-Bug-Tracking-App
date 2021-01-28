@@ -2,11 +2,11 @@
   overflow: hidden;
 }
 
-html {
+#root {
+  grid-template-columns: 20% 80%;
+  display: grid;
   color:rgb(223, 238, 255);
-  
-  
-
+  margin: -0.5rem;
 }
 button {
   background: #864040;
