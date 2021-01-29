@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {getBugs} from '../../Controllers/Redux/bugSlice';
-import BugCard from '../Bugcard/bugCard';
+import BugCard from '../Components/Bugcard/bugCard';
 export default ()=> {
   const dispatch = useDispatch();
   const {bugs} = useSelector(state=>state);

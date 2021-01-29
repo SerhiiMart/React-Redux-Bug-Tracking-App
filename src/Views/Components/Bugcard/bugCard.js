@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import './bugcard.css';
-import PriorityController from '../../Controllers/prioritycontroller';
+import PriorityController from '../../../Controllers/prioritycontroller';
 
 export default (props) => {
   
