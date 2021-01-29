@@ -1,7 +1,8 @@
 .login {
-  width: 100vw;
-  height: 100vh;
-
+  width: 105vw;
+  height: 101.3vh;
+  /* width:100%;
+  height: 100%; */
   position: absolute;
   background: url(../../Images/forest.jpg);
   background-size: cover;
@@ -10,20 +11,22 @@
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
 }
 
 .login .loginPanel {
   /* background-color: var(--prime-color); */
   width: 24.74rem;
-  background-color: rgba(67, 116, 52, 0.527);
+  background-color: rgba(123, 129, 121, 0.527);
   background-blend-mode: multiply;
   border: 0.3rem solid rgb(79, 101, 102);
   border-radius: 3%;
-  margin: 4rem auto;
+  margin: 3rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .loginPanel h2 {

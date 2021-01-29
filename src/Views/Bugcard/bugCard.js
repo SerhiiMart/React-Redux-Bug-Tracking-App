@@ -1,0 +1,21 @@
+import React, {useEffect} from 'react';
+import './bugcard.css';
+import PriorityController from '../../Controllers/prioritycontroller';
+
+export default (props) => {
+  
+  //destructuring
+  const {name, priority, version} = props.bug;
+  // coloring
+  const {level, color} = PriorityController(priority);
+  function Clicked(){
+    props.clicked(name);
+  }
+  return(
+    <div className="bug-card" onClick={Clicked} style={{color:color}}>
+      <h2 className="name">{name}</h2>
+      <h4 className="priority">{level}</h4>
+      <h5 className="version">{version}</h5>
+    </div>
+  )
+};

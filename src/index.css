@@ -1,11 +1,13 @@
 * {
   overflow-x:hidden;
+  /* overflow-y: hidden; */
 } 
 
 
 #root {
   grid-template-columns: 20% 80%;
   display: grid;
+  --cardColor: #cae1fc;
   color:rgb(223, 238, 255);
   margin: -0.5rem;
 }
@@ -29,9 +31,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  grid-column: 2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+

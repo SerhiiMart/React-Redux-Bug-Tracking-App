@@ -1,8 +1,9 @@
 import React from 'react';
 import {useSelector} from 'react-redux';
 import Login from './Views/Login/login';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Sidebar from './Views/Sidebar/sidebar';
+import ViewBugPage from './Views/Pages/viewbugs';
 
 
 function App() {
@@ -12,7 +13,10 @@ function App() {
       { !auth.LoggedIn ? <Login /> :
        <>
        <Sidebar />
-    
+       <Switch>
+         <Route path="/view-bugs"> <ViewBugPage /></Route>
+       </Switch>
+       
        </>
        }
     </Router>
