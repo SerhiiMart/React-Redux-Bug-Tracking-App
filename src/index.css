@@ -7,6 +7,7 @@
 #root {
   grid-template-columns: 20% 80%;
   display: grid;
+  --main-color: rgb(110, 134, 107);
   --cardColor: #cae1fc;
   color:rgb(223, 238, 255);
   margin: -0.5rem;
