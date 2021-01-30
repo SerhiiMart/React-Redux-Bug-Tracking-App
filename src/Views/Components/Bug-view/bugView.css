@@ -12,3 +12,21 @@
   justify-content: center;
   color: black;
 }
+
+.bug-view h1 {
+  min-width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color:white;
+  padding-bottom: 20px;
+  border-bottom: 1px groove white;
+}
+
+.close-Btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+}
+
+
