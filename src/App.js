@@ -16,7 +16,7 @@ function App() {
        <Sidebar />
        <Switch>
          <Route path="/view-bugs"> <ViewBugPage /></Route>
-         <Router path="/create"><CreateBug title="Create Bug" /></Router>
+         <Router path="/create"><div className="page-container"><CreateBug title="Create Bug" /></div></Router>
        </Switch>
        </>
        }
