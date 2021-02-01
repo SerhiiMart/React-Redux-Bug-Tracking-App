@@ -16,8 +16,8 @@ function App() {
        <>
        <Sidebar />
        <Switch>
-          <Route path="/"> <Dashboard /></Route>
-         <Route path="/view-bugs"> <ViewBugPage /></Route>
+         <Route path="/" exact><Dashboard /></Route>
+         <Route path="/view-bugs"><ViewBugPage /></Route>
          <Router path="/create"><div className="page-container"><CreateBug title="Create Bug" /></div></Router>
        </Switch>
        </>
