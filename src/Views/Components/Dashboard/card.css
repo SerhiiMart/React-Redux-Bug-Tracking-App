@@ -21,3 +21,9 @@
   font-size: 1.5rem;
   margin: 40px;
 }
+
+.dashboard-card:hover {
+  background-color: #0e0c0c ;
+  transition: all 0.4s;
+  transform: 1.05;
+}

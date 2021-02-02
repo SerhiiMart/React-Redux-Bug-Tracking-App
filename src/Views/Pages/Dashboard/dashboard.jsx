@@ -8,6 +8,7 @@ import Card from '../../Components/Dashboard/card';
 export default ()=>{
   const dispatch = useDispatch();
   const bugs = useSelector(state=>state.bugs);
+  const browserHistory = useHistory();
   let highCount = 0;
   let midCount = 0;
   let lowCount = 0;
@@ -17,6 +18,9 @@ export default ()=>{
     lowCount = filterBugs(3);
   }
 
+  function redirect() {
+    browserHistory.push('/view-bugs');
+  }
   function filterBugs (priority) {
     return bugs.filter((bug)=>{return bug.priority == priority})
   };
@@ -27,9 +31,9 @@ export default ()=>{
 
   return (
     <div className="page-container">
-      <Card priority="1" count={highCount.length} />
-      <Card priority="2" count={midCount.length} />
-      <Card priority="3" count={lowCount.length} />      
+      <Card priority="1" count={highCount.length} clicked={redirect} />
+      <Card priority="2" count={midCount.length} clicked={redirect} />
+      <Card priority="3" count={lowCount.length} clicked={redirect} />      
     </div>
   )
 };
